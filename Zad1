@@ -47,7 +47,7 @@ public class SemaforyABC {
         @SuppressWarnings("SleepWhileInLoop")
         public void run() {
             try {
-                for (int i = 0; i < COUNT; i++) {
+                for (int i = 0; i < 2*COUNT; i++) {
                     //use semaphores here
                     b.acquire();
                     System.out.print("B ");
