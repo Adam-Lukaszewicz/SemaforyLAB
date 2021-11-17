@@ -24,8 +24,6 @@ public class SemaforyABC {
                     //use semaphores here
                     c.release();
                     a.acquire();
-                    b.release();
-                    a.acquire();
                     System.out.print("A ");
                     //use semaphores here
                     b.release();
@@ -75,7 +73,7 @@ public class SemaforyABC {
                     c.acquire();
                     System.out.print("C ");
                     //use semaphores here
-                    a.release();
+                    b.release();
                     Thread.sleep(DELAY);
                 }
             } catch (InterruptedException ex) {
